@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>happpieeeee eveee bestieeeeeee</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hapieeee Eveeee Bestieeee 💖</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(circle at 20% 20%, #ffb6e6, transparent 30%),
+        radial-gradient(circle at 80% 80%, #c8a6ff, transparent 30%),
+        linear-gradient(135deg, #ff5f9e, #a855f7, #6366f1);
+
+    animation: backgroundMove 8s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    from {
+        background-position: 0% 0%;
+    }
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+/* Main card */
+.card {
+    width: 90%;
+    max-width: 700px;
+    min-height: 430px;
+    padding: 50px 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 35px;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(15px);
+
+    border: 2px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+        0 0 30px rgba(255,255,255,0.4),
+        0 30px 80px rgba(0,0,0,0.25);
+
+    animation: cardAppear 1.5s ease;
+    position: relative;
+    z-index: 5;
+}
+
+@keyframes cardAppear {
+    0% {
+        opacity: 0;
+        transform: scale(0.4) rotate(-10deg);
+    }
+
+    70% {
+        transform: scale(1.05) rotate(2deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+}
+
+/* Text */
+.content h1 {
+    font-size: clamp(35px, 7vw, 75px);
+    color: white;
+
+    text-shadow:
+        0 0 10px #fff,
+        0 0 25px #ff69b4,
+        0 0 50px #ff1493;
+
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    from {
+        text-shadow:
+            0 0 10px white,
+            0 0 20px #ff69b4;
+    }
+
+    to {
+        text-shadow:
+            0 0 20px white,
+            0 0 40px #ff1493,
+            0 0 70px #ff69b4;
+    }
+}
+
+.content h2 {
+    margin-top: 25px;
+    color: white;
+    font-size: clamp(22px, 4vw, 35px);
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.content p {
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Big heart */
+.big-heart {
+    font-size: 70px;
+    margin-bottom: 15px;
+    animation: heartBeat 1.2s infinite;
+}
+
+@keyframes heartBeat {
+    0%,100% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.3);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    bottom: -80px;
+    font-size: 30px;
+    animation: floatHeart linear infinite;
+    z-index: 1;
+}
+
+@keyframes floatHeart {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.heart:nth-child(1) {
+    left: 5%;
+    animation-duration: 7s;
+}
+
+.heart:nth-child(2) {
+    left: 15%;
+    animation-duration: 10s;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 30%;
+    animation-duration: 8s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(4) {
+    left: 50%;
+    animation-duration: 11s;
+    animation-delay: 3s;
+}
+
+.heart:nth-child(5) {
+    left: 70%;
+    animation-duration: 9s;
+    animation-delay: 1s;
+}
+
+.heart:nth-child(6) {
+    left: 85%;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+/* Sparkles */
+.sparkle {
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    animation: sparkle 1.5s infinite;
+}
+
+@keyframes sparkle {
+    0%,100% {
+        opacity: 0;
+        transform: scale(0) rotate(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5) rotate(180deg);
+    }
+}
+
+.s1 {
+    top: 10%;
+    left: 10%;
+}
+
+.s2 {
+    top: 20%;
+    right: 10%;
+    animation-delay: .5s;
+}
+
+.s3 {
+    bottom: 15%;
+    left: 15%;
+    animation-delay: 1s;
+}
+
+.s4 {
+    bottom: 20%;
+    right: 15%;
+    animation-delay: 1.5s;
+}
+
+/* Small floating stars */
+.star {
+    position: absolute;
+    font-size: 20px;
+    animation: starMove 4s infinite ease-in-out;
+}
+
+@keyframes starMove {
+    0%,100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+    }
+}
+
+.star1 {
+    top: 5%;
+    left: 40%;
+}
+
+.star2 {
+    bottom: 5%;
+    right: 40%;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating hearts -->
+<div class="heart">💖</div>
+<div class="heart">💕</div>
+<div class="heart">💗</div>
+<div class="heart">💓</div>
+<div class="heart">💞</div>
+<div class="heart">💘</div>
+
+<!-- Sparkles -->
+<div class="sparkle s1">✨</div>
+<div class="sparkle s2">✨</div>
+<div class="sparkle s3">✨</div>
+<div class="sparkle s4">✨</div>
+
+<!-- Stars -->
+<div class="star star1">⭐</div>
+<div class="star star2">🌟</div>
+
+<!-- Main Birthday Card -->
+<div class="card">
+
+    <div class="content">
+
+        <div class="big-heart">💗</div>
+
+        <h1>
+            HAPIEEEEEE<br>
+            EVEEEEEE<br>
+            BESTIEEEEEE! 🎀
+        </h1>
+
+        <h2>
+            💕 MY FAVORITE HUMAN 💕
+        </h2>
+
+        <p>
+            You are literally the sweetest bestie ever! 🥹💖
+            <br>
+            Stay happy, keep smiling & keep shining! ✨
+        </p>
+
+        <p>
+            🎂🎀💗✨🫶🏻✨💗🎀🎂
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+</body>
+</html>
